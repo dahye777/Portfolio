@@ -1,11 +1,39 @@
 .location {
     width: 100%;
+    height: 400px;
+    background: url(../../images/map.jpg) no-repeat center/cover;
+    filter: brightness(50%);
     position: relative;
+    
+    .inner{
+
+        h2{
+            position: absolute;
+            top: 45%;
+            left: 42%;
+            filter: none;
+
+    
+            a{
+                display: block;
+                text-align: center;
+                padding: 50px 100px;
+                border-bottom: 1px solid #fff;
+                color: #fff;
+                font: bold 30px/1 '맑은 고딕';
+            }
+        }
+    }
+}
+.content{
+    margin-bottom: 100px;
     #map {
-        width: 100%;
+        width: 1000px;
         height: 500px;
         border: 1px solid #000;
         margin-bottom: 20px;
+        margin: 0 auto;
+        margin-top: 100px;
     }
 
     &::after {
@@ -16,50 +44,54 @@
 
     .traffic {
         float: left;
+        margin-left: 350px;
 
         li {
             float: left;
-            margin-right: 20px;
 
             a {
                 display: block;
-                width: 200px;
+                width: 150px;
                 height: 40px;
-                background-color: #555;
+                background-color: #fff;
                 font: bold 12px/40px "맑은 고딕";
-                color: #fff;
+                color: #333;
                 text-align: center;
                 border: 1px solid #555;
+                margin-top: 50px;
+            }&:nth-of-type(1){
+                margin-left: 100px;
             }
 
             &.on a {
-                background-color: #fff;
-                color: #333;
+                background-color: rgba(164, 11, 11, 0.918);
+                color: #fff;
             }
         }
     }
 
     .branch {
         float: right;
+        margin-right: 450px;
 
         li {
             float: left;
-            margin-left: 10px;
 
             a {
                 display: block;
-                width: 200px;
+                width: 150px;
                 height: 40px;
-                background-color: #555;
+                background-color: #fff;
                 font: bold 12px/40px "맑은 고딕";
-                color: #fff;
+                color: #333;
                 text-align: center;
                 border: 1px solid #555;
+                margin-top: 50px;
             }
 
             &.on a {
-                background-color: #fff;
-                color: #333;
+                background-color: rgba(164, 11, 11, 0.918);
+                color: #fff;
             }
         }
     }

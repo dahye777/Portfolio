@@ -4,6 +4,7 @@
 //center: new kakao.maps.LatLng(37.4868302, 126.7829877), // 지도의 중심좌표
 const mapContainer = document.getElementById("map");
 const branchBtn = document.querySelectorAll(".branch li");
+const trafficBtn = document.querySelectorAll("traffic li");
 
 var mapOptions = { //지도를 생성할 때 필요한 기본 옵션
     center: new kakao.maps.LatLng(37.4868302, 126.7829877), //지도의 중심좌표.
@@ -16,23 +17,23 @@ var map = new kakao.maps.Map(mapContainer, mapOptions);
 const markerOptions = [
     {
         title: "본점", //제목
-        latlng: new kakao.maps.LatLng(37.4868302, 126.7829877), //지도의 위치
-        imgSrc: 'img/marker1.png', //마커이미지 경로
-        imgSize: new kakao.maps.Size(232, 99), //마커이미지 크기
+        latlng: new kakao.maps.LatLng(37.5768578, 126.9889298), //지도의 위치
+        imgSrc: 'images/marker.png', //마커이미지 경로
+        imgSize: new kakao.maps.Size(99, 99), //마커이미지 크기
         imgPos: { offset: new kakao.maps.Point(116, 99) }, //마커 이미지 위치
         button: branchBtn[0] //마커와 매치할 버튼의 인덱스
     }, {
         title: "지점1", //제목
         latlng: new kakao.maps.LatLng(37.491649, 126.785895), //지도의 위치
-        imgSrc: 'img/marker2.png', //마커이미지 경로
-        imgSize: new kakao.maps.Size(232, 99), //마커이미지 크기
+        imgSrc: 'images/marker.png', //마커이미지 경로
+        imgSize: new kakao.maps.Size(99, 99), //마커이미지 크기
         imgPos: { offset: new kakao.maps.Point(116, 99) }, //마커 이미지 위치
         button: branchBtn[1] //마커와 매치할 버튼의 인덱스
     }, {
         title: "지점2", //제목
         latlng: new kakao.maps.LatLng(37.3766941, 126.6671667), //지도의 위치
-        imgSrc: 'img/marker3.png', //마커이미지 경로
-        imgSize: new kakao.maps.Size(232, 99), //마커이미지 크기
+        imgSrc: 'images/marker.png', //마커이미지 경로
+        imgSize: new kakao.maps.Size(99, 99), //마커이미지 크기
         imgPos: { offset: new kakao.maps.Point(116, 99) }, //마커 이미지 위치
         button: branchBtn[2] //마커와 매치할 버튼의 인덱스
     }
