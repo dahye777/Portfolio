@@ -1,0 +1,70 @@
+.store {
+  height: 750px;
+  position: relative;
+
+  h2 {
+    font: bold 30px/1 "Jua";
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    color: #333;
+  }
+
+  p {
+    font: bold 20px/1 "맑은 고딕";
+    color: #333;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+  }
+
+  button {
+    a {
+      display: block;
+      position: absolute;
+      top: 25%;
+      left: 830px;
+      font: normal 25px/1 "Jua";
+      color: #fff;
+      padding: 10px 20px;
+      background-color: rgba(164, 11, 11, 0.918);
+      border-radius: 30px;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    position: absolute;
+    top: 45%;
+    left: 21%;
+
+    li {
+      a {
+        display: block;
+
+        img {
+          object-fit: contain;
+          margin-left: 7px;
+        }
+
+        p {
+          font: normal 20px/1 "맑은 고딕";
+          margin: 20px 0;
+          text-align: center;
+          color: #333;
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+
+        h3 {
+          font: bold 25px/1 "Jua";
+          text-align: center;
+          color: rgba(164, 11, 11, 0.918);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.event{
+    width: 100%;
+    height: 400px;
+    background: url(../images/event.jpg ) no-repeat center/cover;
+    filter: brightness(50%);
+    
+
+    .inner{
+
+        h2{
+            position: absolute;
+            top: 45%;
+            left: 42%;
+            filter: none;
+
+    
+            a{
+                display: block;
+                text-align: center;
+                padding: 50px 100px;
+                border-bottom: 1px solid #fff;
+                color: #fff;
+                font: bold 30px/1 '맑은 고딕';
+            }
+        }
+    }
+}
+select{
+    display: block;
+    margin: 50px;
+    padding: 5px 20px;
+
+}

@@ -1,0 +1,2082 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Caveat&family=Darumadrop+One&family=Indie+Flower&family=Jua&family=Nanum+Pen+Script&family=Pangolin&family=Shadows+Into+Light&family=Stardos+Stencil&family=Sunflower:wght@300&family=Walter+Turncoat&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+}
+header h1 a img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  text-align: left;
+  padding: 10px;
+  margin-left: 50px;
+}
+header .bg {
+  /* display: none; */
+  position: absolute;
+  top: 27.8%;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+header .gnb {
+  display: flex;
+  justify-content: space-evenly;
+  width: calc(100% - 500px);
+  height: 200px;
+  margin-left: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .gnb li:hover > a {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+header .gnb li a {
+  display: block;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  font: bold 23px/1 "arial";
+  width: 250px;
+  text-align: center;
+}
+header .gnb li .sub {
+  /* display: none; */
+  position: absolute;
+  text-align: center;
+  margin-top: 10px;
+  z-index: 3;
+}
+header .gnb li .sub li a {
+  display: block;
+  font: bold 15px/1 "맑은 고딕";
+  color: #d0bbbb;
+  margin: 0px;
+  width: 250px;
+}
+header .gnb li .sub li a:hover {
+  color: #fff;
+  background-color: rgb(110, 35, 35);
+}
+
+.slide {
+  background: url(../images/v-bg.jpg) center/cover;
+  object-fit: cover;
+  width: 100%;
+  height: 800px;
+  position: relative;
+}
+.slide .left_arrow {
+  position: absolute;
+  top: 39%;
+  left: 40px;
+}
+.slide .text {
+  position: absolute;
+  top: 30%;
+  left: 18%;
+}
+.slide .text h2 {
+  font: normal 70px/1 "Nanum Pen Script";
+  color: #fff;
+  line-height: 100px;
+  text-shadow: 0 0 10px #fff;
+}
+.slide .text h2 span {
+  font: normal 100px/1 "Nanum Pen Script";
+  color: rgb(180, 240, 240);
+}
+.slide .text p {
+  font: normal 80px/1 "Nanum Pen Script";
+  color: #fff;
+  line-height: 100px;
+  text-shadow: 0 0 10px #fff;
+}
+.slide .text p span {
+  color: rgb(236, 152, 152);
+}
+.slide .text span {
+  font: normal 50px/1 "Nanum Pen Script";
+  color: rgb(235, 235, 167);
+  line-height: 50px;
+  text-shadow: 0 0 10px #fff;
+}
+.slide .cake img {
+  display: block;
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+.slide .right_arrow {
+  position: absolute;
+  top: 39%;
+  right: 40px;
+}
+.slide .box1 {
+  width: 100px;
+  height: 20px;
+  background-color: rgba(108, 13, 13, 0.705);
+  position: absolute;
+  bottom: 5%;
+  left: 43%;
+  border-radius: 50px;
+}
+.slide .box2 {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  border-radius: 50%;
+}
+.slide .box3 {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 5%;
+  left: 53%;
+  border-radius: 50%;
+}
+
+.newMenu {
+  width: 100%;
+  height: 740px;
+  background-color: #f2e5e5;
+  position: relative;
+}
+.newMenu h2 {
+  font: bold 25px/1 "Walter Turncoat";
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+.newMenu ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 900px;
+  position: relative;
+  top: 20%;
+  left: 25%;
+}
+.newMenu ul li a {
+  display: block;
+  font: bold 20px/1 "Sunflower";
+  color: #fff;
+  padding: 20px 30px;
+  background-color: rgb(108, 27, 39);
+}
+.newMenu .n-1 img {
+  position: absolute;
+  top: 42%;
+  left: 20%;
+  z-index: 3;
+  transform: scale(1);
+}
+.newMenu .n-1 h2 {
+  font: normal 30px/1 "Black Han Sans";
+  color: rgb(61, 90, 162);
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+.newMenu .n-1 p {
+  font: normal 20px/1 "Walter Turncoat";
+  color: #333;
+  position: absolute;
+  top: 60%;
+  left: 45%;
+}
+.newMenu .n-1 span {
+  font: bold 15px/1 "Walter Turncoat";
+  color: #333;
+  position: absolute;
+  top: 65%;
+  left: 45%;
+}
+
+.story {
+  height: 650px;
+  background: url(../images/s-bg.jpg) center/cover;
+  position: relative;
+  background-attachment: fixed;
+}
+.story h1 {
+  font: bold 40px/1 "Black Han Sans";
+  color: rgb(205, 160, 36);
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px #333;
+}
+.story h2 {
+  font: normal 30px/1 "Nanum Pen Script";
+  color: #fff;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+}
+.story p {
+  font: normal 20px/1 "Caveat";
+  color: #f0d7d7;
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  line-height: 25px;
+}
+.story button a {
+  display: block;
+  color: #fff;
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  border: 1px solid #fff;
+  padding: 10px;
+}
+.story img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+}
+
+.news {
+  height: 750px;
+  background-color: #f5f2e7;
+  position: relative;
+}
+.news h2 {
+  font: bold 25px/1 "Walter Turncoat";
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+.news ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 230px;
+}
+.news ul li:hover a img {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+.news ul li:hover a .tag i {
+  opacity: 1;
+  transition: 0.5s;
+}
+.news ul li a {
+  display: block;
+  position: relative;
+}
+.news ul li a img {
+  object-fit: contain;
+}
+.news ul li a .tag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 15px;
+}
+.news ul li a .tag i {
+  font-size: 30px;
+  color: #fff;
+  opacity: 0;
+}
+
+.store {
+  height: 750px;
+  position: relative;
+}
+.store h2 {
+  font: bold 30px/1 "Jua";
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  color: #333;
+}
+.store p {
+  font: bold 20px/1 "맑은 고딕";
+  color: #333;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+.store button a {
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 830px;
+  font: normal 25px/1 "Jua";
+  color: #fff;
+  padding: 10px 20px;
+  background-color: rgba(164, 11, 11, 0.918);
+  border-radius: 30px;
+}
+.store ul {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  position: absolute;
+  top: 45%;
+  left: 21%;
+}
+.store ul li a {
+  display: block;
+}
+.store ul li a img {
+  object-fit: contain;
+  margin-left: 7px;
+}
+.store ul li a p {
+  font: normal 20px/1 "맑은 고딕";
+  margin: 20px 0;
+  text-align: center;
+  color: #333;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.store ul li a h3 {
+  font: bold 25px/1 "Jua";
+  text-align: center;
+  color: rgba(164, 11, 11, 0.918);
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(164, 11, 11, 0.918);
+}
+footer .footermenu ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1000px;
+}
+footer .footermenu ul li:last-child a {
+  padding-right: 0px;
+  border: none;
+}
+footer .footermenu ul li a {
+  display: block;
+  font: normal 15px/1 "Jua";
+  color: #fff;
+  margin-top: 30px;
+  padding-right: 30px;
+  border-right: 2px solid #fff;
+}
+footer .copyright {
+  margin-top: 50px;
+  margin-left: 35px;
+}
+footer .copyright p {
+  font: normal 15px/1 "Jua";
+  color: #ca8080;
+  line-height: 20px;
+}
+
+.cb {
+  width: 100%;
+  height: 100%;
+}
+
+.coffee {
+  position: relative;
+}
+.coffee .mp4 video {
+  display: block;
+  width: 100%;
+  height: 400px;
+  filter: brightness(50%);
+  object-fit: cover;
+}
+.coffee .inner h2 {
+  position: absolute;
+  top: 45%;
+  left: 42%;
+}
+.coffee .inner h2 a {
+  display: block;
+  text-align: center;
+  padding: 50px 100px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font: bold 30px/1 "맑은 고딕";
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  padding: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu ul {
+  display: flex;
+  position: absolute;
+  top: 25%;
+  left: 33%;
+}
+.menu ul li {
+  margin-right: 20px;
+}
+.menu ul li:nth-of-type(1) a {
+  background-color: rgb(110, 35, 35);
+  color: #fff;
+}
+.menu ul li a {
+  display: block;
+  padding: 15px 40px;
+  border: 1px solid #333;
+  color: #333;
+  width: 150px;
+  text-align: center;
+  font: normal 20px/1 "맑은 고딕";
+}
+.menu article {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #333;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-right: 50px;
+  background-color: antiquewhite;
+  position: relative;
+}
+.menu article:hover:nth-of-type(1)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(1) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(1) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(1) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(1) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(2)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(2) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(2) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(2) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(2) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(3)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(3) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(3) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(3) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(3) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(4)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(4) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(4) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(4) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(4) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(5)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(5) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(5) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(5) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(5) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(6)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(6) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(6) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(6) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(6) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(7)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(7) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(7) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(7) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(7) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(8)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(8) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(8) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(8) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(8) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover > a {
+  background-color: rgb(110, 35, 35);
+  color: antiquewhite;
+}
+.menu article .txt {
+  display: none;
+}
+.menu article img {
+  width: 100%;
+  height: 250px;
+}
+.menu article a {
+  display: block;
+  text-align: center;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #333;
+  padding: 29px 0px;
+  border-top: 1px solid #333;
+}
+
+.fc {
+  position: absolute;
+  top: 100%;
+}
+
+.juice {
+  position: relative;
+}
+.juice .mp4 video {
+  display: block;
+  width: 100%;
+  height: 400px;
+  filter: brightness(50%);
+  object-fit: cover;
+}
+.juice .inner h2 {
+  position: absolute;
+  top: 45%;
+  left: 42%;
+}
+.juice .inner h2 a {
+  display: block;
+  text-align: center;
+  padding: 50px 100px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font: bold 30px/1 "맑은 고딕";
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  padding: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu ul {
+  display: flex;
+  position: absolute;
+  top: 25%;
+  left: 33%;
+}
+.menu ul li {
+  margin-right: 20px;
+}
+.menu ul li:nth-of-type(1) a {
+  background-color: rgb(110, 35, 35);
+  color: #fff;
+}
+.menu ul li a {
+  display: block;
+  padding: 15px 40px;
+  border: 1px solid #333;
+  color: #333;
+  width: 150px;
+  text-align: center;
+  font: normal 20px/1 "맑은 고딕";
+}
+.menu article {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #333;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-right: 50px;
+  background-color: antiquewhite;
+  position: relative;
+}
+.menu article:hover:nth-of-type(1)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(1) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(1) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(1) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(1) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(2)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(2) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(2) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(2) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(2) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(3)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(3) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(3) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(3) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(3) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(4)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(4) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(4) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(4) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(4) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(5)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(5) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(5) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(5) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(5) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(6)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(6) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(6) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(6) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(6) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(7)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(7) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(7) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(7) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(7) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(8)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(8) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(8) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(8) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(8) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover > a {
+  background-color: rgb(110, 35, 35);
+  color: antiquewhite;
+}
+.menu article .txt {
+  display: none;
+}
+.menu article img {
+  width: 100%;
+  height: 250px;
+}
+.menu article a {
+  display: block;
+  text-align: center;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #333;
+  padding: 29px 0px;
+  border-top: 1px solid #333;
+}
+
+.food {
+  position: relative;
+}
+.food .mp4 video {
+  display: block;
+  width: 100%;
+  height: 400px;
+  filter: brightness(50%);
+  object-fit: cover;
+}
+.food .inner h2 {
+  position: absolute;
+  top: 45%;
+  left: 42%;
+}
+.food .inner h2 a {
+  display: block;
+  text-align: center;
+  padding: 50px 100px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font: bold 30px/1 "맑은 고딕";
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  padding: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu ul {
+  display: flex;
+  position: absolute;
+  top: 25%;
+  left: 33%;
+}
+.menu ul li {
+  margin-right: 20px;
+}
+.menu ul li:nth-of-type(1) a {
+  background-color: rgb(110, 35, 35);
+  color: #fff;
+}
+.menu ul li a {
+  display: block;
+  padding: 15px 40px;
+  border: 1px solid #333;
+  color: #333;
+  width: 150px;
+  text-align: center;
+  font: normal 20px/1 "맑은 고딕";
+}
+.menu article {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #333;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-right: 50px;
+  background-color: antiquewhite;
+  position: relative;
+}
+.menu article:hover::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover > a {
+  background-color: rgb(110, 35, 35);
+  color: antiquewhite;
+}
+.menu article .txt {
+  display: none;
+}
+.menu article img {
+  width: 100%;
+  height: 250px;
+}
+.menu article a {
+  display: block;
+  text-align: center;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #333;
+  padding: 29px 0px;
+  border-top: 1px solid #333;
+}
+
+.dessert {
+  position: relative;
+}
+.dessert .mp4 video {
+  display: block;
+  width: 100%;
+  height: 400px;
+  filter: brightness(50%);
+  object-fit: cover;
+}
+.dessert .inner h2 {
+  position: absolute;
+  top: 45%;
+  left: 42%;
+}
+.dessert .inner h2 a {
+  display: block;
+  text-align: center;
+  padding: 50px 100px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font: bold 30px/1 "맑은 고딕";
+}
+
+.menu {
+  width: 100%;
+  height: 100%;
+  padding: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu ul {
+  display: flex;
+  position: absolute;
+  top: 25%;
+  left: 33%;
+}
+.menu ul li {
+  margin-right: 20px;
+}
+.menu ul li:nth-of-type(1) a {
+  background-color: rgb(110, 35, 35);
+  color: #fff;
+}
+.menu ul li a {
+  display: block;
+  padding: 15px 40px;
+  border: 1px solid #333;
+  color: #333;
+  width: 150px;
+  text-align: center;
+  font: normal 20px/1 "맑은 고딕";
+}
+.menu article {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #333;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-right: 50px;
+  background-color: antiquewhite;
+  position: relative;
+}
+.menu article:hover:nth-of-type(1)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(1) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(1) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(1) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(1) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(2)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(2) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(2) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(2) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(2) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(3)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(3) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(3) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(3) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(3) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(4)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(4) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(4) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(4) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(4) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(5)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(5) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(5) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(5) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(5) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(6)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(6) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(6) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(6) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(6) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(7)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(7) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(7) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(7) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(7) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover:nth-of-type(8)::before {
+  content: "";
+  width: 299px;
+  height: 254px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu article:hover:nth-of-type(8) .txt {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  opacity: 1;
+}
+.menu article:hover:nth-of-type(8) .txt h2 {
+  text-align: left;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+}
+.menu article:hover:nth-of-type(8) .txt p {
+  text-align: left;
+  font: normal 17px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.menu article:hover:nth-of-type(8) .txt span {
+  text-align: left;
+  font: normal 23px/1 "Nanum Pen Script";
+  color: #fff;
+  padding-top: 10px;
+}
+.menu article:hover > a {
+  background-color: rgb(110, 35, 35);
+  color: antiquewhite;
+}
+.menu article .txt {
+  display: none;
+}
+.menu article img {
+  width: 100%;
+  height: 250px;
+}
+.menu article a {
+  display: block;
+  text-align: center;
+  font: normal 35px/1 "Nanum Pen Script";
+  color: #333;
+  padding: 29px 0px;
+  border-top: 1px solid #333;
+}
+
+.mambership {
+  position: relative;
+}
+.mambership .mp4 video {
+  display: block;
+  width: 100%;
+  height: 400px;
+  filter: brightness(50%);
+  object-fit: cover;
+}
+.mambership .inner h2 {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+.mambership .inner h2 a {
+  display: block;
+  text-align: center;
+  padding: 50px 100px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font: bold 30px/1 "맑은 고딕";
+}
+
+.smart {
+  position: relative;
+}
+.smart .mp4 video {
+  display: block;
+  width: 100%;
+  height: 400px;
+  filter: brightness(50%);
+  object-fit: cover;
+}
+.smart .inner h2 {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+.smart .inner h2 a {
+  display: block;
+  text-align: center;
+  padding: 50px 100px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font: bold 30px/1 "맑은 고딕";
+}
+
+.notice {
+  width: 100%;
+  height: 400px;
+  background: url(../images/notice.jpg) no-repeat center/cover;
+  filter: brightness(50%);
+}
+.notice .inner h2 {
+  position: absolute;
+  top: 45%;
+  left: 42%;
+  filter: none;
+}
+.notice .inner h2 a {
+  display: block;
+  text-align: center;
+  padding: 50px 100px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font: bold 30px/1 "맑은 고딕";
+}
+
+.content select {
+  display: inline-block;
+  margin: 50px;
+  padding: 5px 20px;
+}
+.content table {
+  width: 1000px;
+  border-bottom: 2px solid #111;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+  margin: 0 auto;
+}
+.content table tr:hover {
+  background: rgba(164, 11, 11, 0.5);
+  color: #fff;
+}
+.content table tr th {
+  padding: 15px;
+  background: rgba(164, 11, 11, 0.918);
+  color: #fff;
+}
+.content table tr th:nth-of-type(1) {
+  width: 10%;
+}
+.content table tr th:nth-of-type(3) {
+  width: 15%;
+}
+.content table tr th:nth-of-type(4) {
+  width: 15%;
+}
+.content table tr td {
+  padding: 13px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+.content table tr td:nth-of-type(2) {
+  text-align: left;
+}
+.content table tr td:nth-of-type(3) {
+  font-family: "맑은 고딕";
+}
+.content table tr td a {
+  color: #333;
+  line-height: 1.4;
+}
+.content .pagination {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.content .pagination::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.content .pagination .numbers {
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+}
+.content .pagination .numbers a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  font: 11px/30px "arial";
+  color: rgb(110, 35, 35);
+  margin: 0 5px;
+}
+.content .pagination .numbers a:hover {
+  background: rgb(164, 11, 11);
+  color: #fff;
+}
+
+.event {
+  width: 100%;
+  height: 400px;
+  background: url(../images/event.jpg) no-repeat center/cover;
+  filter: brightness(50%);
+}
+.event .inner h2 {
+  position: absolute;
+  top: 45%;
+  left: 42%;
+  filter: none;
+}
+.event .inner h2 a {
+  display: block;
+  text-align: center;
+  padding: 50px 100px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font: bold 30px/1 "맑은 고딕";
+}
+
+select {
+  display: block;
+  margin: 50px;
+  padding: 5px 20px;
+}
+
+.about img {
+  width: 100%;
+  object-fit: fill;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(50%);
+  z-index: 1;
+}
+.about img:nth-of-type(2) {
+  position: absolute;
+  top: 31%;
+  left: 0;
+  filter: brightness(50%);
+}
+.about span {
+  font: normal 25px/1 " 맑은 고딕";
+  color: #fff;
+  position: absolute;
+  top: 13%;
+  left: 10%;
+  z-index: 3;
+}
+.about h2 {
+  font: bold 30px/1 " 맑은 고딕";
+  color: #fff;
+  position: absolute;
+  top: 14.5%;
+  left: 10%;
+  z-index: 3;
+}
+.about p {
+  font: normal 20px/1 " 맑은 고딕";
+  color: #fff;
+  position: absolute;
+  top: 17%;
+  left: 10.2%;
+  z-index: 3;
+  line-height: 25px;
+}
+.about p:nth-of-type(2) {
+  position: absolute;
+  top: 45%;
+  left: 10.2%;
+  line-height: 30px;
+}
+.about p:nth-of-type(3) {
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  line-height: 30px;
+}
+.about h3 {
+  font: bold 30px/1 " 맑은 고딕";
+  color: #fff;
+  position: absolute;
+  top: 41%;
+  left: 10%;
+  z-index: 3;
+}
+.about h3:nth-of-type(2) {
+  position: absolute;
+  top: 41%;
+  left: 55%;
+}
+.about .line {
+  position: absolute;
+  top: 40%;
+  left: 17%;
+  width: 500px;
+  height: 500px;
+  border-right: 2px dotted #fff;
+  z-index: 3;
+}
+
+.history {
+  font-size: 0;
+}
+.history img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  position: relative;
+}
+.history .inner h2 {
+  position: absolute;
+  top: 6%;
+  left: 42%;
+}
+.history .inner h2 a {
+  display: block;
+  text-align: center;
+  padding: 50px 100px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font: bold 30px/1 "맑은 고딕";
+}
+.history p {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  text-align: center;
+  color: #fff;
+  font: normal 15px/1 "맑은 고딕";
+  line-height: 30px;
+}
+.history .line1 {
+  width: 500px;
+  height: 2000px;
+  border-right: 2px solid #fff;
+  position: absolute;
+  top: 30%;
+  left: 23%;
+}
+.history .y_2023 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+.history .y_2023 h2 {
+  font: bold 20px/1 "맑은 고딕";
+}
+.history .y_2019 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+.history .y_2019 h2 {
+  font: bold 20px/1 "맑은 고딕";
+}
+.history .y_2018 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+.history .y_2018 h2 {
+  font: bold 20px/1 "맑은 고딕";
+}
+.history .year {
+  width: 100%;
+  height: 1500px;
+  background-color: #4a2f0d;
+}
+.history .year .number {
+  position: relative;
+}
+.history .year .number .y_2017 {
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  color: #fff;
+}
+.history .year .number .y_2017 h2 {
+  font: bold 20px/1 "맑은 고딕";
+  text-align: right;
+}
+.history .year .number .y_2017 p {
+  font: normal 18px/1 "맑은 고딕";
+  text-align: right;
+}
+
+.FH {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.location {
+  width: 100%;
+  position: relative;
+}
+.location #map {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+}
+.location::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.location .traffic {
+  float: left;
+}
+.location .traffic li {
+  float: left;
+  margin-right: 20px;
+}
+.location .traffic li a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background-color: #555;
+  font: bold 12px/40px "맑은 고딕";
+  color: #fff;
+  text-align: center;
+  border: 1px solid #555;
+}
+.location .traffic li.on a {
+  background-color: #fff;
+  color: #333;
+}
+.location .branch {
+  float: right;
+}
+.location .branch li {
+  float: left;
+  margin-left: 10px;
+}
+.location .branch li a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background-color: #555;
+  font: bold 12px/40px "맑은 고딕";
+  color: #fff;
+  text-align: center;
+  border: 1px solid #555;
+}
+.location .branch li.on a {
+  background-color: #fff;
+  color: #333;
+}
+
+/*# sourceMappingURL=style.css.map */

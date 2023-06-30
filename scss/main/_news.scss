@@ -1,0 +1,58 @@
+.news {
+  height: 750px;
+  background-color: #f5f2e7;
+  position: relative;
+
+  h2 {
+    font: bold 25px/1 "Walter Turncoat";
+    position: absolute;
+    top: 10%;
+    left: 45%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 230px;
+
+    li {
+      &:hover {
+        a {
+          img {
+            filter: brightness(50%);
+            transition: 0.5s;
+          }
+
+          .tag {
+            i {
+              opacity: 1;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+      a {
+        display: block;
+        position: relative;
+
+        img {
+          object-fit: contain;
+        }
+
+        .tag {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          letter-spacing: 15px;
+
+          i {
+            font-size: 30px;
+            color: #fff;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}

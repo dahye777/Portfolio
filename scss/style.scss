@@ -1,0 +1,26 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Caveat&family=Darumadrop+One&family=Indie+Flower&family=Jua&family=Nanum+Pen+Script&family=Pangolin&family=Shadows+Into+Light&family=Stardos+Stencil&family=Sunflower:wght@300&family=Walter+Turncoat&display=swap");
+@import "./common/reset";
+
+// 메인페이지
+@import "./common/header";
+@import "./main/slide";
+@import "./main/newmenu";
+@import "./main/story";
+@import "./main/news";
+@import "./main/store";
+@import "./common/footer";
+
+// 서브페이지
+@import "./sub/coffee.scss";
+@import "./sub/sub-layout";
+@import "./sub/juice.scss";
+@import "./sub/food.scss";
+@import "./sub/dessert.scss";
+@import "./sub/mambership.scss";
+@import "./sub/smart_order.scss";
+@import "./sub/notice.scss";
+@import "./sub/event.scss";
+@import "./sub/about-hollys.scss";
+@import "./sub/history.scss";
+@import "./sub/location.scss";

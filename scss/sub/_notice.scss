@@ -1,0 +1,112 @@
+.notice{
+    width: 100%;
+    height: 400px;
+    background: url(../images/notice.jpg) no-repeat center/cover;
+    filter: brightness(50%);
+    
+
+    .inner{
+
+        h2{
+            position: absolute;
+            top: 45%;
+            left: 42%;
+            filter: none;
+
+    
+            a{
+                display: block;
+                text-align: center;
+                padding: 50px 100px;
+                border-bottom: 1px solid #fff;
+                color: #fff;
+                font: bold 30px/1 '맑은 고딕';
+            }
+        }
+    }
+}
+
+.content{
+
+    select{
+        display: inline-block;
+        margin: 50px;
+        padding: 5px 20px;
+
+    }
+    table {
+        width: 1000px;
+        border-bottom: 2px solid #111;
+        border-collapse: collapse;
+        margin-bottom: 50px;
+        margin: 0 auto;
+        tr {
+
+
+            &:hover {
+                background:  rgba(164, 11, 11, 0.5);
+                color: #fff;
+            }
+
+            th {
+                padding: 15px;
+                background:  rgba(164, 11, 11, 0.918);
+                color: #fff;
+                &:nth-of-type(1) {
+                    width: 10%;
+                }
+                &:nth-of-type(3) {
+                    width: 15%;
+                }
+                &:nth-of-type(4) {
+                    width: 15%;
+                }
+            }
+            td {
+                padding: 13px;
+                border-bottom: 1px solid #ddd;
+                text-align: center;
+                &:nth-of-type(2) {
+                    text-align: left;
+                }
+                &:nth-of-type(3) {
+                    font-family: "맑은 고딕";
+                }
+                a {
+                    color: #333;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+
+    .pagination {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        &::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .numbers {
+            display: inline-block;
+            text-align: center;
+            font-size: 0;
+            a {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border: 1px solid #000;
+                font: 11px/30px "arial";
+                color: rgba(110, 35, 35, 1);
+                margin: 0 5px;
+                &:hover {
+                    background: rgba(164, 11, 11, 1);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
