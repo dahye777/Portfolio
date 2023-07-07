@@ -1,30 +1,147 @@
-.mambership{
-    position: relative;
+.hidden {
+    position: absolute;
+    top: -999999px;
+    opacity: 0;
+}
 
-    .mp4{
-        video{
-            display: block;
-            width: 100%;
-            height: 400px;
-            filter: brightness(50%);
-            object-fit: cover;
-        }
+.join_wrap{
+    
+    img{
+        object-fit: fill;
+        align-items: center;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
-    .inner{
-        h2{
-            position: absolute;
-            top: 45%;
-            left: 40%;
-    
-            a{
-                display: block;
-                text-align: center;
-                padding: 50px 100px;
-                border-bottom: 1px solid #fff;
-                color: #fff;
-                font: bold 30px/1 '맑은 고딕';
+    fieldset {
+    border: none;
+}
+
+#join {
+    width: 100%;
+    padding: 150px 0px;
+    margin: 0 auto;
+
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+
+        h1 {
+            font: bold 60px/1 "Raleway";
+            color: rgba(110, 35, 35, 1);
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        table {
+            border-top: 2px solid rgba(110, 35, 35, 1);
+            border-bottom: 2px solid rgba(110, 35, 35, 1);
+            margin: 0 auto;
+
+            th,
+            td {
+                border-bottom: 1px solid rgba(110, 35, 35, 0.5);
+                padding: 15px 25px;
+            }
+
+            th {
+                width: 20%;
+
+                input[type='reset'],
+                input[type="submit"] {
+                    width: 30%;
+                    height: 40px;
+                    border: 1px solid rgba(110, 35, 35, 1);
+                    font: bold 14px/40px "arial";
+                    color: #555;
+                    cursor: pointer;
+                    margin: 10px;
+
+                    &:hover {
+                        background-color: rgba(110, 35, 35, 1);
+                        color: #fff;
+                    }
+                }
+            }
+
+            td {
+                border-left: 1px solid rgba(110, 35, 35, 0.5);
+                position: relative;
+
+                #toggleBtn {
+                    position: absolute;
+                    top: 32px;
+                    right: 50%;
+                    transform: translateY(-50%);
+                    width: 34px;
+                    height: 34px;
+                    background-color: rgba(0, 0, 0, 0.05);
+                    border-radius: 50%;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &::before {
+                        content: '\f06e';
+                        font-family: fontAwesome;
+                    }
+
+                    &.hide::before {
+                        content: '\f070';
+                        font-family: fontAwesome;
+                    }
+
+                }
+
+                input[type="text"],
+                input[type="password"],
+                select {
+                    position: relative;
+                    width: 40%;
+                    background-color: rgba(0, 0, 0, 0.03);
+                    padding: 10px;
+                    border: 1px solid rgba(110, 35, 35, 1);
+                }
+
+                input[type="radio"],
+                input[type="checkbox"] {
+                    margin-right: 30px;
+                }
+
+                textarea {
+                    resize: none;
+                    width: 60%;
+                    height: 150px;
+                    background-color: rgba(0, 0, 0, 0.05);
+                    padding: 10px;
+                    border: 1px solid rgba(110, 35, 35, 1);
+                }
+
+                //동적으로 생성될 에러메세지 스타일
+                p {
+                    font: 11px/1 "맑은 고딕";
+                    color: hotpink;
+                    margin-top: 5px;
+                }
             }
         }
     }
+}
+
+.join_bg{
+    width: 1000px;
+    height: 1100px;
+    background-color: #ffffff7a;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
 }

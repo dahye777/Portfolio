@@ -1933,28 +1933,129 @@ footer .copyright p {
   border-top: 1px solid #333;
 }
 
-.mambership {
+.hidden {
+  position: absolute;
+  top: -999999px;
+  opacity: 0;
+}
+
+.join_wrap img {
+  object-fit: fill;
+  align-items: center;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.join_wrap fieldset {
+  border: none;
+}
+.join_wrap #join {
+  width: 100%;
+  padding: 150px 0px;
+  margin: 0 auto;
+}
+.join_wrap #join .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+.join_wrap #join .inner h1 {
+  font: bold 60px/1 "Raleway";
+  color: rgb(110, 35, 35);
+  margin-bottom: 50px;
+  text-align: center;
+}
+.join_wrap #join .inner table {
+  border-top: 2px solid rgb(110, 35, 35);
+  border-bottom: 2px solid rgb(110, 35, 35);
+  margin: 0 auto;
+}
+.join_wrap #join .inner table th,
+.join_wrap #join .inner table td {
+  border-bottom: 1px solid rgba(110, 35, 35, 0.5);
+  padding: 15px 25px;
+}
+.join_wrap #join .inner table th {
+  width: 20%;
+}
+.join_wrap #join .inner table th input[type=reset],
+.join_wrap #join .inner table th input[type=submit] {
+  width: 30%;
+  height: 40px;
+  border: 1px solid rgb(110, 35, 35);
+  font: bold 14px/40px "arial";
+  color: #555;
+  cursor: pointer;
+  margin: 10px;
+}
+.join_wrap #join .inner table th input[type=reset]:hover,
+.join_wrap #join .inner table th input[type=submit]:hover {
+  background-color: rgb(110, 35, 35);
+  color: #fff;
+}
+.join_wrap #join .inner table td {
+  border-left: 1px solid rgba(110, 35, 35, 0.5);
   position: relative;
 }
-.mambership .mp4 video {
-  display: block;
-  width: 100%;
-  height: 400px;
-  filter: brightness(50%);
-  object-fit: cover;
-}
-.mambership .inner h2 {
+.join_wrap #join .inner table td #toggleBtn {
   position: absolute;
-  top: 45%;
-  left: 40%;
+  top: 32px;
+  right: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.mambership .inner h2 a {
-  display: block;
-  text-align: center;
-  padding: 50px 100px;
-  border-bottom: 1px solid #fff;
-  color: #fff;
-  font: bold 30px/1 "맑은 고딕";
+.join_wrap #join .inner table td #toggleBtn::before {
+  content: "\f06e";
+  font-family: fontAwesome;
+}
+.join_wrap #join .inner table td #toggleBtn.hide::before {
+  content: "\f070";
+  font-family: fontAwesome;
+}
+.join_wrap #join .inner table td input[type=text],
+.join_wrap #join .inner table td input[type=password],
+.join_wrap #join .inner table td select {
+  position: relative;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 10px;
+  border: 1px solid rgb(110, 35, 35);
+}
+.join_wrap #join .inner table td input[type=radio],
+.join_wrap #join .inner table td input[type=checkbox] {
+  margin-right: 30px;
+}
+.join_wrap #join .inner table td textarea {
+  resize: none;
+  width: 60%;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  border: 1px solid rgb(110, 35, 35);
+}
+.join_wrap #join .inner table td p {
+  font: 11px/1 "맑은 고딕";
+  color: hotpink;
+  margin-top: 5px;
+}
+.join_wrap .join_bg {
+  width: 1000px;
+  height: 1100px;
+  background-color: rgba(255, 255, 255, 0.4784313725);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .smart {
@@ -1979,6 +2080,82 @@ footer .copyright p {
   border-bottom: 1px solid #fff;
   color: #fff;
   font: bold 30px/1 "맑은 고딕";
+}
+
+.smart_main {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 235, 205, 0.3);
+  border-bottom: 2px solid bisque;
+  position: relative;
+}
+.smart_main h1 {
+  font: bold 45px/1 "맑은 고딕";
+  line-height: 55px;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 10px solid brown;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+.smart_main p {
+  font: normal 25px/1 "맑은 고딕";
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  text-align: right;
+  padding: 10px;
+}
+.smart_main p:nth-of-type(2) {
+  top: 42%;
+}
+.smart_main p span {
+  font: bold 30px/1 "맑은 고딕";
+  line-height: 40px;
+}
+.smart_main img {
+  display: block;
+  max-width: 100%;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.smart_order {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(255, 235, 205, 0.5);
+}
+.smart_order article h2 {
+  font: bold 25px/1 "맑은 고딕";
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 10px;
+}
+.smart_order article h2::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 20px;
+  background-color: rgba(202, 69, 69, 0.3);
+  position: relative;
+  top: 30px;
+  left: 33px;
+}
+.smart_order article p {
+  font: normal 15px/1 "맑은 고딕";
+  text-align: center;
+  padding-top: 10px;
+}
+.smart_order article img {
+  display: block;
+  max-width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  object-fit: contain;
+  padding-top: 20px;
 }
 
 .notice {
@@ -2077,6 +2254,11 @@ footer .copyright p {
   color: #fff;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+}
+
 .event {
   width: 100%;
   height: 400px;
@@ -2104,26 +2286,125 @@ select {
   padding: 5px 20px;
 }
 
+.event_wrap {
+  width: 1000px;
+  height: 2000px;
+  background-color: rgba(246, 122, 122, 0.2);
+  box-shadow: 10px 5px 10px rgba(53, 33, 1, 0.5);
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 300px;
+}
+.event_wrap .circle {
+  width: 800px;
+  height: 1500px;
+  background-color: #fff;
+  border-radius: 500px 500px 0 0;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+.event_wrap .circle img {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+.event_wrap .circle .event_title {
+  position: absolute;
+  top: 23%;
+  left: 10%;
+  text-align: center;
+}
+.event_wrap .circle .event_title h2 {
+  font: 900 60px/1 "맑은 고딕";
+  padding-bottom: 20px;
+}
+.event_wrap .circle .event_title h3 {
+  font: normal 40px/1 "맑은 고딕";
+  margin-bottom: 15px;
+}
+.event_wrap .circle .event_title p {
+  font: normal 30px/1 "맑은 고딕";
+  line-height: 40px;
+  color: rgb(216, 137, 2);
+}
+.event_wrap .circle .event_title .event_level {
+  position: relative;
+  top: 100%;
+  left: 3%;
+  width: 600px;
+  height: 600px;
+  object-fit: contain;
+}
+.event_wrap .circle .event_title .event_box {
+  position: absolute;
+  top: 65%;
+  left: -12.5%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.event_wrap .circle .event_title span {
+  font: bold 20px/1 "맑은 고딕";
+  position: absolute;
+  top: 45%;
+  left: 3%;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.event_wrap .circle .event_title span:nth-of-type(2) {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+.event_wrap .circle .event_title span:nth-of-type(3) {
+  top: 74%;
+  left: 14%;
+}
+.event_wrap .circle .event_title span:nth-of-type(4) {
+  top: 89%;
+  left: 8%;
+}
+.event_wrap .circle .event_title span:nth-of-type(5) {
+  top: 93%;
+  left: 5%;
+  font: bold 15px/1 "맑은 고딕";
+  color: rgb(167, 18, 18);
+}
+.event_wrap .event_notice {
+  text-align: left;
+  position: absolute;
+  top: 82.5%;
+  left: 10%;
+}
+.event_wrap .event_notice h2 {
+  font: bold 25px/1 "맑은 고딕";
+  padding-bottom: 20px;
+}
+.event_wrap .event_notice p {
+  font: normal 18px/1 "맑은 고딕";
+  line-height: 35px;
+}
+
+.about {
+  font-size: 0;
+}
 .about img {
   width: 100%;
+  height: 1000px;
   object-fit: fill;
-  position: absolute;
-  top: 0;
-  left: 0;
-  filter: brightness(50%);
-  z-index: 1;
-}
-.about img:nth-of-type(2) {
-  position: absolute;
-  top: 31%;
-  left: 0;
   filter: brightness(50%);
 }
 .about span {
   font: normal 25px/1 " 맑은 고딕";
   color: #fff;
   position: absolute;
-  top: 13%;
+  top: 30%;
   left: 10%;
   z-index: 3;
 }
@@ -2131,7 +2412,7 @@ select {
   font: bold 30px/1 " 맑은 고딕";
   color: #fff;
   position: absolute;
-  top: 14.5%;
+  top: 32%;
   left: 10%;
   z-index: 3;
 }
@@ -2139,40 +2420,49 @@ select {
   font: normal 20px/1 " 맑은 고딕";
   color: #fff;
   position: absolute;
-  top: 17%;
-  left: 10.2%;
+  top: 35%;
+  left: 10%;
   z-index: 3;
   line-height: 25px;
 }
-.about p:nth-of-type(2) {
-  position: absolute;
-  top: 45%;
-  left: 10.2%;
-  line-height: 30px;
+
+.about_contents {
+  font-size: 0;
 }
-.about p:nth-of-type(3) {
-  position: absolute;
-  top: 45%;
-  left: 55%;
-  line-height: 30px;
+.about_contents img {
+  object-fit: fill;
+  width: 100vw;
+  height: 800px;
+  filter: brightness(50%);
 }
-.about h3 {
+.about_contents h3 {
   font: bold 30px/1 " 맑은 고딕";
   color: #fff;
   position: absolute;
-  top: 41%;
-  left: 10%;
+  top: 60%;
+  left: 15%;
   z-index: 3;
 }
-.about h3:nth-of-type(2) {
+.about_contents h3:nth-of-type(2) {
   position: absolute;
-  top: 41%;
-  left: 55%;
+  left: 60%;
 }
-.about .line {
+.about_contents p {
+  display: inline-block;
   position: absolute;
-  top: 40%;
-  left: 17%;
+  top: 65%;
+  left: 15.2%;
+  line-height: 200% !important;
+  color: #fff;
+  font: normal 20px/1 "맑은 고딕";
+}
+.about_contents p:nth-of-type(2) {
+  left: 60%;
+}
+.about_contents .line {
+  position: absolute;
+  top: 60%;
+  left: 22%;
   width: 500px;
   height: 500px;
   border-right: 2px dotted #fff;
@@ -2189,6 +2479,11 @@ select {
   filter: brightness(50%);
   position: relative;
 }
+.history .history_bg {
+  width: 100vw;
+  height: 1700px;
+  background-color: #4a2f0d;
+}
 .history .inner h2 {
   position: absolute;
   top: 6%;
@@ -2202,77 +2497,128 @@ select {
   color: #fff;
   font: bold 30px/1 "맑은 고딕";
 }
-.history p {
+.history .history_contents {
+  width: 100%;
   position: absolute;
-  top: 15%;
+  top: 17%;
+  left: 0;
+}
+.history .history_contents > p {
+  position: absolute;
+  top: -3%;
   left: 25%;
   text-align: center;
   color: #fff;
   font: normal 15px/1 "맑은 고딕";
   line-height: 30px;
 }
-.history .line1 {
-  width: 500px;
-  height: 2000px;
-  border-right: 2px solid #fff;
-  position: absolute;
-  top: 30%;
-  left: 23%;
-}
-.history .y_2023 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #fff;
-}
-.history .y_2023 h2 {
-  font: bold 20px/1 "맑은 고딕";
-}
-.history .y_2019 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #fff;
-}
-.history .y_2019 h2 {
-  font: bold 20px/1 "맑은 고딕";
-}
-.history .y_2018 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #fff;
-}
-.history .y_2018 h2 {
-  font: bold 20px/1 "맑은 고딕";
-}
-.history .year {
-  width: 100%;
-  height: 1500px;
-  background-color: #4a2f0d;
-}
-.history .year .number {
+.history .history_contents .inner {
+  width: 1180px;
+  margin: 50px auto;
+  padding: 150px 20px;
   position: relative;
 }
-.history .year .number .y_2017 {
+.history .history_contents .inner .center-line {
   position: absolute;
-  top: 20px;
-  left: 10%;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 95%;
+  background-color: #fff;
+}
+.history .history_contents .inner .center-line .scroll-icon {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  font-size: 25px;
+  text-align: center;
+  line-height: 40px;
+  color: rgb(151, 16, 16);
+  box-shadow: 0 0 0 4px #4a2f0d, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+.history .history_contents .inner .row {
+  display: flex;
+}
+.history .history_contents .inner .row section {
+  background-color: rgba(0, 0, 0, 0.2470588235);
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+.history .history_contents .inner .row section .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.history .history_contents .inner .row section .details .title {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(251, 214, 214);
+  text-shadow: 0 0 15px #fff;
+}
+.history .history_contents .inner .row section p {
+  margin: 10px 0;
+  font-size: 15px;
   color: #fff;
 }
-.history .year .number .y_2017 h2 {
-  font: bold 20px/1 "맑은 고딕";
+.history .history_contents .inner .row-1 {
+  justify-content: flex-start;
   text-align: right;
 }
-.history .year .number .y_2017 p {
-  font: normal 18px/1 "맑은 고딕";
+.history .history_contents .inner .row-1 section p {
   text-align: right;
 }
-
-.FH {
+.history .history_contents .inner .row-1 section::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-radius: 2px;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: 30px;
+  transform: rotate(45deg);
+  z-index: 1;
+  box-shadow: 0 0 10px #fff;
+}
+.history .history_contents .inner .row-1 section .details {
+  display: block;
+  text-align: right;
+}
+.history .history_contents .inner .row-1 section::before {
+  right: -7px;
+}
+.history .history_contents .inner .row-2 {
+  justify-content: flex-end;
+}
+.history .history_contents .inner .row-2 section p {
+  text-align: left;
+}
+.history .history_contents .inner .row-2 section::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-radius: 2px;
+  position: absolute;
+  top: 30px;
+  right: 50%;
+  transform: rotate(45deg);
+  z-index: 1;
+  box-shadow: 0 0 10px #fff;
+}
+.history .history_contents .inner .row-2 section::before {
+  left: -7px;
 }
 
 .location {
@@ -2313,34 +2659,10 @@ select {
   display: block;
   clear: both;
 }
-.content .traffic {
-  float: left;
-  margin-left: 350px;
-}
-.content .traffic li {
-  float: left;
-}
-.content .traffic li a {
-  display: block;
-  width: 150px;
-  height: 40px;
-  background-color: #fff;
-  font: bold 12px/40px "맑은 고딕";
-  color: #333;
-  text-align: center;
-  border: 1px solid #555;
-  margin-top: 50px;
-}
-.content .traffic li:nth-of-type(1) {
-  margin-left: 100px;
-}
-.content .traffic li.on a {
-  background-color: rgba(164, 11, 11, 0.918);
-  color: #fff;
-}
 .content .branch {
   float: right;
-  margin-right: 450px;
+  margin-right: 500px;
+  position: relative;
 }
 .content .branch li {
   float: left;
@@ -2359,6 +2681,15 @@ select {
 .content .branch li.on a {
   background-color: rgba(164, 11, 11, 0.918);
   color: #fff;
+}
+.content .branch #search-box {
+  width: 500px;
+  height: 40px;
+  padding: 5px;
+  font-size: 16px;
+  position: absolute;
+  top: 50px;
+  right: 350px;
 }
 
 /*# sourceMappingURL=style.css.map */

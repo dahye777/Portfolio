@@ -42,9 +42,10 @@
         clear: both;
     }
 
-    .traffic {
-        float: left;
-        margin-left: 350px;
+    .branch {
+        float: right;
+        margin-right: 500px;
+        position: relative;
 
         li {
             float: left;
@@ -59,8 +60,6 @@
                 text-align: center;
                 border: 1px solid #555;
                 margin-top: 50px;
-            }&:nth-of-type(1){
-                margin-left: 100px;
             }
 
             &.on a {
@@ -68,31 +67,15 @@
                 color: #fff;
             }
         }
-    }
 
-    .branch {
-        float: right;
-        margin-right: 450px;
-
-        li {
-            float: left;
-
-            a {
-                display: block;
-                width: 150px;
-                height: 40px;
-                background-color: #fff;
-                font: bold 12px/40px "맑은 고딕";
-                color: #333;
-                text-align: center;
-                border: 1px solid #555;
-                margin-top: 50px;
-            }
-
-            &.on a {
-                background-color: rgba(164, 11, 11, 0.918);
-                color: #fff;
-            }
+        #search-box {
+            width: 500px; 
+            height: 40px; 
+            padding: 5px; 
+            font-size: 16px; 
+            position: absolute;
+            top: 50px;
+            right: 350px;
         }
     }
 }
