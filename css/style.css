@@ -42,7 +42,7 @@ header h1 a img {
   margin-left: 50px;
 }
 header .bg {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 27.8%;
   left: 0;
@@ -74,7 +74,7 @@ header .gnb li a {
   text-align: center;
 }
 header .gnb li .sub {
-  /* display: none; */
+  display: none;
   position: absolute;
   text-align: center;
   margin-top: 10px;
@@ -93,7 +93,7 @@ header .gnb li .sub li a:hover {
 }
 
 .slide {
-  background: url(../images/v-bg.jpg) center/cover;
+  background: url(../images/main/v-bg.jpg) center/cover;
   object-fit: cover;
   width: 100%;
   height: 800px;
@@ -234,7 +234,322 @@ header .gnb li .sub li a:hover {
 
 .story {
   height: 650px;
-  background: url(../images/s-bg.jpg) center/cover;
+  background: url(../images/main/s-bg.jpg) center/cover;
+  position: relative;
+  background-attachment: fixed;
+}
+.story h1 {
+  font: bold 40px/1 "Black Han Sans";
+  color: rgb(205, 160, 36);
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px #333;
+}
+.story h2 {
+  font: normal 30px/1 "Nanum Pen Script";
+  color: #fff;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+}
+.story p {
+  font: normal 20px/1 "Caveat";
+  color: #f0d7d7;
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  line-height: 25px;
+}
+.story button a {
+  display: block;
+  color: #fff;
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  border: 1px solid #fff;
+  padding: 10px;
+}
+.story img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+}
+
+.news {
+  height: 750px;
+  background-color: #f5f2e7;
+  position: relative;
+}
+.news h2 {
+  font: bold 25px/1 "Walter Turncoat";
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+.news ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 230px;
+}
+.news ul li:hover a img {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+.news ul li:hover a .tag i {
+  opacity: 1;
+  transition: 0.5s;
+}
+.news ul li a {
+  display: block;
+  position: relative;
+}
+.news ul li a img {
+  object-fit: contain;
+}
+.news ul li a .tag {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 15px;
+}
+.news ul li a .tag i {
+  font-size: 30px;
+  color: #fff;
+  opacity: 0;
+}
+
+.store {
+  height: 750px;
+  position: relative;
+}
+.store h2 {
+  font: bold 30px/1 "Jua";
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  color: #333;
+}
+.store p {
+  font: bold 20px/1 "맑은 고딕";
+  color: #333;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+.store button a {
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 830px;
+  font: normal 25px/1 "Jua";
+  color: #fff;
+  padding: 10px 20px;
+  background-color: rgba(164, 11, 11, 0.918);
+  border-radius: 30px;
+}
+.store ul {
+  display: flex;
+  justify-content: space-between;
+  width: 1000px;
+  position: absolute;
+  top: 45%;
+  left: 21%;
+}
+.store ul li a {
+  display: block;
+}
+.store ul li a img {
+  object-fit: contain;
+  margin-left: 7px;
+}
+.store ul li a p {
+  font: normal 20px/1 "맑은 고딕";
+  margin: 20px 0;
+  text-align: center;
+  color: #333;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.store ul li a h3 {
+  font: bold 25px/1 "Jua";
+  text-align: center;
+  color: rgba(164, 11, 11, 0.918);
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: rgba(164, 11, 11, 0.918);
+}
+footer .footermenu ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1000px;
+}
+footer .footermenu ul li:last-child a {
+  padding-right: 0px;
+  border: none;
+}
+footer .footermenu ul li a {
+  display: block;
+  font: normal 15px/1 "Jua";
+  color: #fff;
+  margin-top: 30px;
+  padding-right: 30px;
+  border-right: 2px solid #fff;
+}
+footer .copyright {
+  margin-top: 50px;
+  margin-left: 35px;
+}
+footer .copyright p {
+  font: normal 15px/1 "Jua";
+  color: #ca8080;
+  line-height: 20px;
+}
+
+header h1 a img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  text-align: left;
+  padding: 10px;
+  margin-left: 50px;
+}
+header .bg {
+  display: none;
+  position: absolute;
+  top: 27.5%;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+header .gnb {
+  display: flex;
+  justify-content: space-evenly;
+  width: calc(100% - 500px);
+  height: 200px;
+  margin-left: 300px;
+}
+header .gnb li:hover > a {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+header .gnb li a {
+  display: block;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  font: bold 23px/1 "arial";
+  width: 250px;
+  text-align: center;
+}
+header .gnb li .sub {
+  display: none;
+  position: absolute;
+  text-align: center;
+  margin-top: 10px;
+  z-index: 3;
+}
+header .gnb li .sub li a {
+  display: block;
+  font: bold 15px/1 "맑은 고딕";
+  color: #d0bbbb;
+  margin: 0px;
+  width: 250px;
+}
+header .gnb li .sub li a:hover {
+  color: #fff;
+  background-color: rgba(110, 35, 35, 0.5);
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slide ul {
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+.slide ul li {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.slide ul li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.newMenu {
+  width: 100%;
+  height: 740px;
+  background-color: #f2e5e5;
+  position: relative;
+}
+.newMenu h2 {
+  font: bold 25px/1 "Walter Turncoat";
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+.newMenu ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 900px;
+  position: relative;
+  top: 20%;
+  left: 25%;
+}
+.newMenu ul li a {
+  display: block;
+  font: bold 20px/1 "Sunflower";
+  color: #fff;
+  padding: 20px 30px;
+  background-color: rgb(108, 27, 39);
+}
+.newMenu .n-1 img {
+  position: absolute;
+  top: 42%;
+  left: 20%;
+  z-index: 3;
+  transform: scale(1);
+}
+.newMenu .n-1 h2 {
+  font: normal 30px/1 "Black Han Sans";
+  color: rgb(61, 90, 162);
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+.newMenu .n-1 p {
+  font: normal 20px/1 "Walter Turncoat";
+  color: #333;
+  position: absolute;
+  top: 60%;
+  left: 45%;
+}
+.newMenu .n-1 span {
+  font: bold 15px/1 "Walter Turncoat";
+  color: #333;
+  position: absolute;
+  top: 65%;
+  left: 45%;
+}
+
+.story {
+  height: 650px;
+  background: url(../images/main/s-bg.jpg) center/cover;
   position: relative;
   background-attachment: fixed;
 }
@@ -2044,7 +2359,7 @@ footer .copyright p {
 }
 .join_wrap #join .inner table td p {
   font: 11px/1 "맑은 고딕";
-  color: hotpink;
+  color: blue;
   margin-top: 5px;
 }
 .join_wrap .join_bg {
@@ -2194,6 +2509,7 @@ footer .copyright p {
 .content table tr:hover {
   background: rgba(164, 11, 11, 0.5);
   color: #fff;
+  cursor: pointer;
 }
 .content table tr th {
   padding: 15px;
@@ -2262,7 +2578,7 @@ body {
 .event {
   width: 100%;
   height: 400px;
-  background: url(../images/event.jpg) no-repeat center/cover;
+  background: url(../images/event/event.jpg) no-repeat center/cover;
   filter: brightness(50%);
 }
 .event .inner h2 {
@@ -2624,7 +2940,7 @@ select {
 .location {
   width: 100%;
   height: 400px;
-  background: url(../../images/map.jpg) no-repeat center/cover;
+  background: url(../../images/map/map.jpg) no-repeat center/cover;
   filter: brightness(50%);
   position: relative;
 }

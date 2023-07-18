@@ -22,6 +22,7 @@
                 color: #fff;
                 font: bold 30px/1 '맑은 고딕';
             }
+
         }
     }
 }
@@ -46,6 +47,7 @@
             &:hover {
                 background:  rgba(164, 11, 11, 0.5);
                 color: #fff;
+                cursor: pointer;
             }
 
             th {

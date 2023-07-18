@@ -6,13 +6,14 @@
     <title>할리스 리디자인</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/46810cdd42.js" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/slide.js"></script>
 </head>
 <body>
     <header>
         <h1>
             <a href="index.html">
-                <img src="images/logo.png" alt="할리스 로고">
+                <img src="images/main/logo.png" alt="할리스 로고">
             </a>
         </h1>
         <div class="bg"></div>
@@ -79,27 +80,17 @@
 
     </header>
     <div class="slide">
-        <div class="left_arrow">
-            <a href="#">
-                <img src="images/left-arrow.png" alt="왼쪽 화살표">
-            </a>
-        </div>
-        <div class="text">
-            <h2><span>샤이닝 윈터 홀케이크</span> 구매 시,</h2>
-            <p>아메리카노(R) 1잔 <span>FREE</span></p>
-            <span>행사 기간 : 12월 9일(금) ~ 12월 31일(토)</span>
-        </div>
-        <div class="cake">
-            <img src="images/v-cake.png" alt="할리스 케이크">
-        </div>
-        <div class="right_arrow">
-            <a href="#">
-                <img src="images/right-arrow.png" alt="오른쪽 화살표">
-            </a>
-        </div>
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
+        <ul>
+            <li>
+                <img src="images/slide/slide1.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/slide/slide2.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/slide/slide3.jpg" alt="">
+            </li>
+        </ul>
     </div>
     <section class="newMenu">
         <h2>New Menu</h2>
@@ -115,7 +106,7 @@
             </li>
         </ul>
         <article class="n-1">
-            <img src="images/n-1.png" alt="윈터 티라미수 라떼">
+            <img src="images/main/n-1.png" alt="윈터 티라미수 라떼">
             <h2>눈 쌓인 겨울 라떼</h2>
             <p>부드러운 치즈의 풍미와 커피의 향이 조화로운 티라미수 라떼</p>
             <span>(R) 6,300 (G) 6,800</span>
@@ -129,18 +120,18 @@
         <p>할리스는 '의미있는 작은 차이'가 <br>
             평범함과 특별함을 가르는 기준이 된다'고 생각합니다</p>
         <button>
-            <a href="#">
+            <a href="history.html">
                 VIEW MORE
             </a>
         </button>
-        <img src="images/s-photo.png" alt="할리스 스토리 사진첩">
+        <img src="images/main/s-photo.png" alt="할리스 스토리 사진첩">
     </section>
     <section class="news">
         <h2>HOLLYS News</h2>
         <ul>
           <li>
             <a href="https://z-p42.www.instagram.com/hollyscoffee.official/channel/?hl=ko">
-              <img src="images/news1.jpg" alt="할리스 소식1" />
+              <img src="images/main/news1.jpg" alt="할리스 소식1" />
               <div class="tag">
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-comment"></i>
@@ -151,7 +142,7 @@
   
           <li>
             <a href="https://z-p42.www.instagram.com/hollyscoffee.official/channel/?hl=ko">
-              <img src="images/news2.jpg" alt="할리스 소식2" />
+              <img src="images/main/news2.jpg" alt="할리스 소식2" />
               <div class="tag">
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-comment"></i>
@@ -161,7 +152,7 @@
           </li>
           <li>
             <a href="https://z-p42.www.instagram.com/hollyscoffee.official/channel/?hl=ko">
-              <img src="images/news3.jpg" alt="할리스 소식3" />
+              <img src="images/main/news3.jpg" alt="할리스 소식3" />
               <div class="tag">
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-comment"></i>
@@ -171,7 +162,7 @@
           </li>
           <li>
             <a href="https://z-p42.www.instagram.com/hollyscoffee.official/channel/?hl=ko">
-              <img src="images/news4.jpg" alt="할리스 소식4" />
+              <img src="images/main/news4.jpg" alt="할리스 소식4" />
               <div class="tag">
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-comment"></i>
@@ -185,7 +176,7 @@
         <h2>매장찾기</h2>
         <p>주변에 있는 할리스를 찾아보세요!</p>
         <button>
-            <a href="#">
+            <a href="location.html">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 매장찾기
             </a>
@@ -193,7 +184,7 @@
         <ul>
             <li>
                 <a href="#">
-                    <img src="images/icon1.png" alt="딜리버리">
+                    <img src="images/main/icon1.png" alt="딜리버리">
                     <p>집에서 편안하게 <br>
                         받을 수 있는</p>
                     <h3>딜리버리</h3>
@@ -201,7 +192,7 @@
             </li>
             <li>
                 <a href="#">
-                    <img src="images/icon2.png" alt="퀵오더">
+                    <img src="images/main/icon2.png" alt="퀵오더">
                     <p>미리 주문하고 <br>
                         픽업가능한</p>
                     <h3>퀵오더</h3>
@@ -209,7 +200,7 @@
             </li>
             <li>
                 <a href="#">
-                    <img src="images/icon3.png" alt="드라이버스루">
+                    <img src="images/main/icon3.png" alt="드라이버스루">
                     <p>차안에서 빠르게 <br>
                         이용할 수 있는</p>
                     <h3>드라이브 스루</h3>
@@ -217,7 +208,7 @@
             </li>
             <li>
                 <a href="#">
-                    <img src="images/icon4.png" alt="24시간">
+                    <img src="images/main/icon4.png" alt="24시간">
                     <p>24시간 언제든 <br>
                         함께할 수 있는</p>
                     <h3>24시간</h3>

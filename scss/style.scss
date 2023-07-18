@@ -11,13 +11,15 @@
 @import "./main/store";
 @import "./common/footer";
 
+@import "./main";
+
 // 서브페이지
 @import "./sub/coffee.scss";
 @import "./sub/sub-layout";
 @import "./sub/juice.scss";
 @import "./sub/food.scss";
 @import "./sub/dessert.scss";
-@import "./sub/mambership.scss";
+@import "./sub/mambership";
 @import "./sub/smart_order.scss";
 @import "./sub/notice.scss";
 @import "./sub/event.scss";

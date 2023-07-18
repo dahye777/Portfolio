@@ -1,12 +1,5 @@
-body{
-    width: 100%;
-    height: 100%;
-}
+
 header{
-    width: 100%;
-    height: 400px;
-    background: url(../images/v-bg.jpg) center/cover;
-    display: flex;
     
     h1{
 
@@ -24,9 +17,9 @@ header{
     }
 
     .bg{
-        /* display: none; */
+        display: none;
         position: absolute;
-        top: 9.1%;
+        top: 27.5%;
         left: 0;
         width: 100%;
         height: 250px;
@@ -61,7 +54,7 @@ header{
             }
 
             .sub{
-                 /* display: none; */
+                display: none;
                 position: absolute;
                 text-align: center;
                 margin-top: 10px;
@@ -85,96 +78,31 @@ header{
             }
         }
     }
+}
 
-    .left_arrow{
-        position: absolute;
-        top: 39%;
-        left: 40px;
-    }
+.slide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 
-    .text{
-        position: absolute;
-        top: 30%;
-        left: 18%;
+    ul {
+        width: 300%;
+        height: 100%;
+        display: flex;
 
-        h2{
-            font: normal 70px/1 "Nanum Pen Script";
-            color: #fff;
-            line-height: 100px;
-            text-shadow: 0 0 10px #fff;
+        li {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
 
-            span{
-                font: normal 100px/1 "Nanum Pen Script";
-                color: rgb(180, 240, 240);
+            img {
+                width: 100%;
+                height: 100%; 
+                object-fit: cover;
             }
         }
-
-        p{
-            font: normal 80px/1 "Nanum Pen Script";
-            color: #fff;
-            line-height: 100px;
-            text-shadow: 0 0 10px #fff;
-
-            span{
-                color: rgb(236, 152, 152);
-            }
-        }
-
-        span{
-            font: normal 50px/1 "Nanum Pen Script";
-            color: rgb(235, 235, 167);
-            line-height: 50px;
-            text-shadow: 0 0 10px #fff;
-        }
-    }
-
-    .cake{
-
-        img{
-            display: block;
-            width: 500px;
-            height: 500px;
-            object-fit: contain;
-            position: absolute;
-            top: 20%;
-            right: 10%;
-        }
-    }
-
-    .right_arrow{
-        position: absolute;
-        top: 39%;
-        right: 40px;
-    }
-
-    .box1{
-        width: 100px;
-        height: 20px;
-        background-color: rgba(108, 13, 13, 0.705);
-        position: absolute;
-        top: 75%;
-        left: 43%;
-        border-radius: 50px;
-    }
-
-    .box2{
-        width: 20px;
-        height: 20px;
-        background-color: #fff;
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        border-radius: 50%;
-    }
-
-    .box3{
-        width: 20px;
-        height: 20px;
-        background-color: #fff;
-        position: absolute;
-        top: 75%;
-        left: 53%;
-        border-radius: 50%;
     }
 }
 
@@ -249,7 +177,7 @@ header{
 
 .story{
     height: 650px;
-    background: url(../images/s-bg.jpg) center/cover;
+    background: url(../images/main/s-bg.jpg) center/cover;
     position: relative;
     background-attachment: fixed;
 

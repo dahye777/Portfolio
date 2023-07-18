@@ -1,3 +1,26 @@
+// gnb
+const gnbItems = document.querySelectorAll(".gnb > li");
+
+gnbItems.forEach(item => {
+  item.addEventListener("mouseover", function() {
+    document.querySelectorAll(".sub, .bg").forEach(element => {
+      element.style.display = "block";
+    });
+  });
+});
+
+gnbItems.forEach(item => {
+  item.addEventListener("mouseout", function() {
+    document.querySelectorAll(".sub, .bg").forEach(element => {
+      element.style.display = "none";
+    });
+  });
+});
+
+
+
+
+// location
 // c843f38e0ea86de237b21137a0dba9c2
 
 
@@ -16,7 +39,7 @@ const markerOptions = [
   {
     title: "Main Store",
     latlng: new kakao.maps.LatLng(37.5768578, 126.9889298),
-    imgSrc: 'images/marker.png',
+    imgSrc: 'images/map/marker.png',
     imgSize: new kakao.maps.Size(99, 99),
     imgPos: { offset: new kakao.maps.Point(116, 99) },
     button: branchBtn[0]
@@ -24,7 +47,7 @@ const markerOptions = [
   {
     title: "Branch1",
     latlng: new kakao.maps.LatLng(37.491649, 126.785895),
-    imgSrc: 'images/marker.png',
+    imgSrc: 'images/map/marker.png',
     imgSize: new kakao.maps.Size(99, 99),
     imgPos: { offset: new kakao.maps.Point(116, 99) },
     button: branchBtn[1]
@@ -32,7 +55,7 @@ const markerOptions = [
   {
     title: "Branch2",
     latlng: new kakao.maps.LatLng(37.3766941, 126.6671667),
-    imgSrc: 'images/marker.png',
+    imgSrc: 'images/map/marker.png',
     imgSize: new kakao.maps.Size(99, 99),
     imgPos: { offset: new kakao.maps.Point(116, 99) },
     button: branchBtn[2]
